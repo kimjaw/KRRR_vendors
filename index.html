@@ -6,24 +6,13 @@
 <meta name="theme-color" content="#1a1a1a" />
 <meta name="robots" content="index, follow" />
 <title>KRRR 입점 업체 리스트</title>
-<meta name="description" content="KRRR 공식 입점 업체 디렉토리. 패션·푸드·뷰티·아동·웨딩 카테고리의 입점 업체를 한눈에 확인하고 사이트로 바로 이동하세요." />
-<meta name="keywords" content="KRRR, 입점업체, 디렉토리, 패션, 푸드, 뷰티, 아동, 웨딩" />
-
-<!-- Open Graph / 카카오톡·페이스북 공유 미리보기 -->
+<meta name="description" content="KRRR 공식 입점 업체 디렉토리. 패션·푸드·뷰티·아동·웨딩 카테고리의 입점 업체를 한눈에 확인하세요." />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="KRRR 입점 업체 리스트" />
 <meta property="og:description" content="패션·푸드·뷰티·아동·웨딩 — KRRR 공식 입점 업체를 한눈에." />
 <meta property="og:locale" content="ko_KR" />
-<meta property="og:site_name" content="KRRR Vendor Directory" />
-
-<!-- Twitter / X 공유 미리보기 -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="KRRR 입점 업체 리스트" />
-<meta name="twitter:description" content="패션·푸드·뷰티·아동·웨딩 — KRRR 공식 입점 업체를 한눈에." />
-
-<!-- Favicon (인라인 SVG) -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a1a1a'/%3E%3Ctext x='16' y='22' font-family='system-ui,sans-serif' font-size='14' font-weight='800' fill='white' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E" />
-
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet" />
 <style>
@@ -38,37 +27,25 @@
     --accent: #1a1a1a;
     --accent-soft: #f4f4ef;
 
-    --cat-fashion-bg: #eef2ff;
-    --cat-fashion-fg: #3a3f7a;
-    --cat-food-bg: #ecf6e6;
-    --cat-food-fg: #3d6a2a;
-    --cat-beauty-bg: #fdecef;
-    --cat-beauty-fg: #8a2840;
-    --cat-kids-bg: #fff1e0;
-    --cat-kids-fg: #8a4a16;
-    --cat-wedding-bg: #f5ecf9;
-    --cat-wedding-fg: #5a2c7a;
-    --cat-default-bg: #f0f0f0;
-    --cat-default-fg: #555555;
+    --cat-fashion-bg: #eef2ff;  --cat-fashion-fg: #3a3f7a;
+    --cat-food-bg: #ecf6e6;     --cat-food-fg: #3d6a2a;
+    --cat-beauty-bg: #fdecef;   --cat-beauty-fg: #8a2840;
+    --cat-kids-bg: #fff1e0;     --cat-kids-fg: #8a4a16;
+    --cat-wedding-bg: #f5ecf9;  --cat-wedding-fg: #5a2c7a;
+    --cat-default-bg: #f0f0f0;  --cat-default-fg: #555555;
   }
-
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.55;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.55;
     -webkit-font-smoothing: antialiased;
   }
-
   .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
 
-  .hero { padding: 80px 0 56px; border-bottom: 1px solid var(--border); background: var(--surface); }
-  .hero .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 18px; }
-  .hero h1 { font-size: clamp(34px, 5vw, 56px); font-weight: 800; margin: 0 0 16px; letter-spacing: -0.02em; line-height: 1.1; }
-  .hero .subtitle { font-size: 17px; color: var(--text-soft); max-width: 640px; margin: 0; }
-  .hero .meta { margin-top: 28px; display: flex; gap: 28px; flex-wrap: wrap; font-size: 13px; color: var(--text-muted); }
+  .hero { padding: 64px 0 40px; border-bottom: 1px solid var(--border); background: var(--surface); }
+  .hero h1 { font-size: clamp(26px, 3.4vw, 36px); font-weight: 800; margin: 0; letter-spacing: -0.02em; line-height: 1.2; }
+  .hero .meta { margin-top: 18px; display: flex; gap: 24px; flex-wrap: wrap; font-size: 13px; color: var(--text-muted); }
   .hero .meta strong { color: var(--text); font-weight: 700; margin-right: 4px; }
 
   .controls {
@@ -76,8 +53,7 @@
     background: rgba(250, 250, 247, 0.92);
     backdrop-filter: saturate(180%) blur(12px);
     -webkit-backdrop-filter: saturate(180%) blur(12px);
-    border-bottom: 1px solid var(--border);
-    padding: 18px 0;
+    border-bottom: 1px solid var(--border); padding: 18px 0;
   }
   .controls-inner { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
   .tabs { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -96,7 +72,7 @@
   .search input {
     width: 100%; border: 1px solid var(--border); background: var(--surface);
     border-radius: 999px; padding: 10px 16px 10px 40px; font-size: 14px;
-    font-family: inherit; color: var(--text); outline: none; transition: border-color 0.18s ease;
+    font-family: inherit; color: var(--text); outline: none;
   }
   .search input::placeholder { color: var(--text-muted); }
   .search input:focus { border-color: var(--text); }
@@ -113,46 +89,40 @@
 
   .card {
     background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
-    padding: 20px 20px 18px; transition: all 0.2s ease; text-decoration: none; color: inherit;
-    display: flex; flex-direction: column; gap: 14px; min-height: 132px;
+    padding: 22px 22px 20px; transition: all 0.2s ease; text-decoration: none; color: inherit;
+    display: flex; flex-direction: column; gap: 14px; min-height: auto;
   }
   .card:hover { border-color: var(--border-strong); transform: translateY(-2px); box-shadow: 0 6px 24px -10px rgba(0,0,0,0.12); }
-  .card .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
-  .card .name { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.3; word-break: keep-all; }
-
-  .badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 999px; letter-spacing: 0.02em; flex-shrink: 0; }
+  .card .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .card .name { font-size: 22px; font-weight: 700; letter-spacing: -0.015em; line-height: 1.25; word-break: keep-all; }
+  .badge { display: inline-block; font-size: 12px; font-weight: 700; padding: 5px 11px; border-radius: 999px; flex-shrink: 0; }
   .badge.cat-fashion  { background: var(--cat-fashion-bg);  color: var(--cat-fashion-fg); }
   .badge.cat-food     { background: var(--cat-food-bg);     color: var(--cat-food-fg); }
   .badge.cat-beauty   { background: var(--cat-beauty-bg);   color: var(--cat-beauty-fg); }
   .badge.cat-kids     { background: var(--cat-kids-bg);     color: var(--cat-kids-fg); }
   .badge.cat-wedding  { background: var(--cat-wedding-bg);  color: var(--cat-wedding-fg); }
   .badge.cat-default  { background: var(--cat-default-bg);  color: var(--cat-default-fg); }
-
-  .card .url { font-size: 12px; color: var(--text-muted); word-break: break-all; margin-top: auto; line-height: 1.4; }
-  .card .visit { font-size: 13px; color: var(--text); font-weight: 600; display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; }
-  .card .visit::after { content: "→"; transition: transform 0.18s ease; display: inline-block; }
-  .card:hover .visit::after { transform: translateX(3px); }
+  .card .url { font-size: 13px; color: var(--text-soft); word-break: break-all; margin-top: auto; line-height: 1.4; font-weight: 500; }
 
   .state { text-align: center; padding: 80px 24px; color: var(--text-muted); font-size: 14px; }
   .spinner { display: inline-block; width: 28px; height: 28px; border: 3px solid var(--border); border-top-color: var(--text); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 14px; }
   @keyframes spin { to { transform: rotate(360deg); } }
   .state .error-title { font-size: 16px; color: var(--text); font-weight: 700; margin-bottom: 8px; }
-  .state .fallback-note { margin-top: 12px; font-size: 12px; }
 
   footer { border-top: 1px solid var(--border); background: var(--surface); padding: 32px 0; text-align: center; color: var(--text-muted); font-size: 12px; }
-  footer a { color: var(--text-soft); text-decoration: none; border-bottom: 1px solid var(--border); }
-  footer a:hover { color: var(--text); }
 
   @media (max-width: 640px) {
-    .hero { padding: 56px 0 40px; }
-    .hero .meta { gap: 16px; font-size: 12px; }
+    .hero { padding: 48px 0 32px; }
+    .hero h1 { font-size: 24px; }
+    .hero .meta { gap: 14px; font-size: 12px; }
     .controls-inner { gap: 12px; }
     .search { margin-left: 0; max-width: none; }
     .section-header { flex-wrap: wrap; }
     .section-header .section-desc { margin-left: 0; flex-basis: 100%; }
     .grid { grid-template-columns: 1fr 1fr; gap: 10px; }
-    .card { padding: 16px; min-height: 120px; }
-    .card .name { font-size: 15px; }
+    .card { padding: 16px 16px 14px; min-height: auto; gap: 10px; }
+    .card .name { font-size: 18px; }
+    .card .url { font-size: 12px; }
   }
   @media (max-width: 420px) {
     .grid { grid-template-columns: 1fr; }
@@ -194,8 +164,7 @@
     </div>
     <div class="state" id="error" style="display:none;">
       <div class="error-title">데이터를 불러오지 못했어요</div>
-      <div>구글 시트 권한이 변경되었거나 일시적인 네트워크 오류일 수 있어요.</div>
-      <div class="fallback-note">최근에 저장된 백업 데이터로 표시 중입니다.</div>
+      <div>최근 백업 데이터로 표시 중입니다.</div>
     </div>
     <div class="state" id="empty" style="display:none;">검색 결과가 없습니다.</div>
   </div>
@@ -203,134 +172,83 @@
 
 <footer>
   <div class="container">
-    ※ 본 페이지는 <strong>읽기 전용 안내 페이지</strong>입니다. 정보 오류 및 수정 문의는 카페 내 마음의편지함을 이용해 주세요.<br/>
-    <span style="display:inline-block;margin-top:8px;">© KRRR · Powered by Google Sheets</span>
+    ※ 정보 오류 및 수정 문의는 카페 내 마음의편지함을 이용해 주세요.<br/>
+    <span style="display:inline-block;margin-top:8px;">© KRRR</span>
   </div>
 </footer>
 
 <script>
-  /* ============================================================
-     ⚙️ 설정 — 본인의 구글 시트 정보 (이미 입력됨)
-     ============================================================ */
-  const SHEET_CONFIG = {
-    sheetId: '1rHuLzz5KkPVVaA4nBsotxB7pzS5GOYQE27Gl7Wz01Rk',
-    gid: '0'
-  };
+  const SHEET_CONFIG = { sheetId: '1rHuLzz5KkPVVaA4nBsotxB7pzS5GOYQE27Gl7Wz01Rk', gid: '0' };
 
-  /* ============================================================
-     백업 데이터 — 시트 로딩 실패 시 사용
-     ============================================================ */
   const FALLBACK_DATA = [
-    ["네이비얼", "https://navyer.kr/", "패션"],
-    ["논파운드", "http://www.nonfound.ai", "패션"],
-    ["덴아워", "https://thenour.kr/", "패션"],
-    ["디앤에스알", "https://www.d-answer.com/", "패션"],
-    ["랩12(lab12)", "https://www.lab12.co.kr/", "패션"],
-    ["로기(ROGI)", "https://rogi.kr/", "패션"],
-    ["로커드", "https://www.lokward.com/", "패션"],
-    ["벨즈커피(VleZ coffee)", "https://smartstore.naver.com/vlezcoffee", "식품"],
-    ["브랜디드", "https://www.musinsa.com/brand/branded?gf=A", "패션"],
-    ["블루 썬플라워(Blue sunflower)", "https://www.bluesf.kr/", "패션"],
-    ["뽀빠이", "https://popeyee.com/", "패션"],
-    ["소버먼트", "http://www.soverment.com", "패션"],
-    ["스펙토", "https://naver.me/FnvWOvMi", "패션"],
-    ["슬로우레코드하우스 (SLOWRECORDHOUSE)", "https://slowrecordhouse.com/", "패션"],
-    ["아킴", "http://akeem.co.kr", "아동"],
-    ["엘무드", "https://lmood.co.kr/", "패션"],
-    ["여러분의 얼굴선생님", "https://naver.me/GKvLZx44", "뷰티"],
-    ["오엑스 스튜디오", "https://oxstudios.co.kr/", "패션"],
-    ["우리두링", "https://wooridooring.com/", "패션"],
-    ["워커샵", "http://www.worker-shop.co.kr", "패션"],
-    ["유니온블루", "https://www.musinsa.com/brand/unionblue?gf=", "패션"],
-    ["윤슬포토", "https://www.instagram.com/yoonseul_photo.wedding", "웨딩"],
-    ["일꼬르소", "http://lfmall.com/", "패션"],
-    ["집시(JIPSY)", "https://jipsy.co.kr/", "패션"],
-    ["코삿", "https://smartstore.naver.com/cosat_apparel/", "패션"],
-    ["탑앤탑", "https://smartstore.naver.com/topandtop", "패션"],
-    ["티앤지티(TNGT)", "https://www.lfmall.co.kr/", "패션"],
-    ["퍼블릭워드로브", "https://www.public-wardrobe.com/", "패션"],
-    ["피스", "https://www.piecestudio.co.kr/", "패션"],
-    ["하쿠나", "https://www.hacoona.com/", "패션"],
+    ["네이비얼", "https://navyer.kr/", "패션"],["논파운드", "http://www.nonfound.ai", "패션"],
+    ["덴아워", "https://thenour.kr/", "패션"],["디앤에스알", "https://www.d-answer.com/", "패션"],
+    ["랩12(lab12)", "https://www.lab12.co.kr/", "패션"],["로기(ROGI)", "https://rogi.kr/", "패션"],
+    ["로커드", "https://www.lokward.com/", "패션"],["벨즈커피(VleZ coffee)", "https://smartstore.naver.com/vlezcoffee", "식품"],
+    ["브랜디드", "https://www.musinsa.com/brand/branded?gf=A", "패션"],["블루 썬플라워(Blue sunflower)", "https://www.bluesf.kr/", "패션"],
+    ["뽀빠이", "https://popeyee.com/", "패션"],["소버먼트", "http://www.soverment.com", "패션"],
+    ["스펙토", "https://naver.me/FnvWOvMi", "패션"],["슬로우레코드하우스 (SLOWRECORDHOUSE)", "https://slowrecordhouse.com/", "패션"],
+    ["아킴", "http://akeem.co.kr", "아동"],["엘무드", "https://lmood.co.kr/", "패션"],
+    ["여러분의 얼굴선생님", "https://naver.me/GKvLZx44", "뷰티"],["오엑스 스튜디오", "https://oxstudios.co.kr/", "패션"],
+    ["우리두링", "https://wooridooring.com/", "패션"],["워커샵", "http://www.worker-shop.co.kr", "패션"],
+    ["유니온블루", "https://www.musinsa.com/brand/unionblue?gf=", "패션"],["윤슬포토", "https://www.instagram.com/yoonseul_photo.wedding", "웨딩"],
+    ["일꼬르소", "http://lfmall.com/", "패션"],["집시(JIPSY)", "https://jipsy.co.kr/", "패션"],
+    ["코삿", "https://smartstore.naver.com/cosat_apparel/", "패션"],["탑앤탑", "https://smartstore.naver.com/topandtop", "패션"],
+    ["티앤지티(TNGT)", "https://www.lfmall.co.kr/", "패션"],["퍼블릭워드로브", "https://www.public-wardrobe.com/", "패션"],
+    ["피스", "https://www.piecestudio.co.kr/", "패션"],["하쿠나", "https://www.hacoona.com/", "패션"],
     ["호두네 감귤밭", "https://hodoo-farm.sixshop.site/", "농수산"],
   ].map(([name, url, item]) => ({ name, url, item }));
 
-  /* ============================================================
-     카테고리 그룹
-     ============================================================ */
   const GROUPS = [
-    { id: "all",      label: "전체",   desc: "모든 입점 업체",          items: null },
-    { id: "fashion",  label: "패션",   desc: "의류·잡화·라이프스타일", items: ["패션"] },
-    { id: "food",     label: "푸드",   desc: "식품·농수산물",          items: ["식품","농수산","음료","식음료"] },
-    { id: "beauty",   label: "뷰티",   desc: "뷰티·메이크업·스타일링", items: ["뷰티","미용"] },
-    { id: "kids",     label: "아동",   desc: "아동·키즈 브랜드",       items: ["아동","키즈"] },
-    { id: "wedding",  label: "웨딩",   desc: "웨딩·사진·기념일",       items: ["웨딩","사진"] },
-    { id: "etc",      label: "기타",   desc: "기타 업종",              items: "__OTHER__" },
+    { id: "all", label: "전체", desc: "모든 입점 업체", items: null },
+    { id: "fashion", label: "패션", desc: "의류·잡화·라이프스타일", items: ["패션"] },
+    { id: "food", label: "푸드", desc: "식품·농수산물", items: ["식품","농수산","음료","식음료"] },
+    { id: "beauty", label: "뷰티", desc: "뷰티·메이크업·스타일링", items: ["뷰티","미용"] },
+    { id: "kids", label: "아동", desc: "아동·키즈 브랜드", items: ["아동","키즈"] },
+    { id: "wedding", label: "웨딩", desc: "웨딩·사진·기념일", items: ["웨딩","사진"] },
+    { id: "etc", label: "기타", desc: "기타 업종", items: "__OTHER__" },
   ];
-
   const ITEM_CLASS = {
-    "패션": "cat-fashion",
-    "식품": "cat-food", "농수산": "cat-food", "음료": "cat-food", "식음료": "cat-food",
-    "뷰티": "cat-beauty", "미용": "cat-beauty",
-    "아동": "cat-kids", "키즈": "cat-kids",
+    "패션": "cat-fashion", "식품": "cat-food", "농수산": "cat-food", "음료": "cat-food", "식음료": "cat-food",
+    "뷰티": "cat-beauty", "미용": "cat-beauty", "아동": "cat-kids", "키즈": "cat-kids",
     "웨딩": "cat-wedding", "사진": "cat-wedding",
   };
 
-  /* ============================================================
-     구글 시트에서 데이터 가져오기
-     ============================================================ */
   async function loadFromSheet() {
     const url = `https://docs.google.com/spreadsheets/d/${SHEET_CONFIG.sheetId}/gviz/tq?tqx=out:json&gid=${SHEET_CONFIG.gid}&t=${Date.now()}`;
     const res = await fetch(url, { cache: 'no-store' });
-    if (!res.ok) throw new Error('네트워크 오류: ' + res.status);
+    if (!res.ok) throw new Error('네트워크 오류');
     const text = await res.text();
-    const start = text.indexOf('{');
-    const end = text.lastIndexOf('}');
+    const start = text.indexOf('{'); const end = text.lastIndexOf('}');
     if (start < 0 || end < 0) throw new Error('응답 형식 오류');
     const json = JSON.parse(text.substring(start, end + 1));
-    if (!json.table || !json.table.rows) throw new Error('테이블 데이터 없음');
-
+    if (!json.table || !json.table.rows) throw new Error('데이터 없음');
     const rows = json.table.rows.map(r => (r.c || []).map(c => (c && c.v != null ? String(c.v).trim() : '')));
     const cols = (json.table.cols || []).map(c => (c.label || '').trim());
-
-    let nameIdx = cols.findIndex(c => c.includes('업체') || c.includes('이름') || c.toLowerCase().includes('name'));
-    let urlIdx  = cols.findIndex(c => c.includes('주소') || c.includes('사이트') || c.toLowerCase().includes('url') || c.toLowerCase().includes('site'));
-    let itemIdx = cols.findIndex(c => c.includes('품목') || c.includes('카테고리') || c.includes('업종') || c.toLowerCase().includes('category'));
+    let nameIdx = cols.findIndex(c => c.includes('업체') || c.includes('이름'));
+    let urlIdx  = cols.findIndex(c => c.includes('주소') || c.includes('사이트'));
+    let itemIdx = cols.findIndex(c => c.includes('품목') || c.includes('카테고리') || c.includes('업종'));
     let dataStart = 0;
-
     if (nameIdx < 0 || urlIdx < 0 || itemIdx < 0) {
       for (let i = 0; i < rows.length; i++) {
         const row = rows[i];
         const ni = row.findIndex(c => c.includes('업체') || c.includes('이름'));
         const ui = row.findIndex(c => c.includes('주소') || c.includes('사이트'));
         const ii = row.findIndex(c => c.includes('품목') || c.includes('카테고리') || c.includes('업종'));
-        if (ni >= 0 && ui >= 0 && ii >= 0) {
-          nameIdx = ni; urlIdx = ui; itemIdx = ii; dataStart = i + 1; break;
-        }
+        if (ni >= 0 && ui >= 0 && ii >= 0) { nameIdx = ni; urlIdx = ui; itemIdx = ii; dataStart = i + 1; break; }
       }
     }
-
-    if (nameIdx < 0 || urlIdx < 0 || itemIdx < 0) throw new Error('헤더(업체명·사이트 주소·품목)를 찾지 못했어요');
-
+    if (nameIdx < 0 || urlIdx < 0 || itemIdx < 0) throw new Error('헤더 없음');
     const data = [];
     for (let i = dataStart; i < rows.length; i++) {
-      const r = rows[i];
-      const name = r[nameIdx] || '';
-      const url  = r[urlIdx] || '';
-      const item = r[itemIdx] || '기타';
-      if (!name || !url) continue;
-      if (name.startsWith('※')) continue;
+      const r = rows[i]; const name = r[nameIdx] || ''; const url = r[urlIdx] || ''; const item = r[itemIdx] || '기타';
+      if (!name || !url) continue; if (name.startsWith('※')) continue;
       data.push({ name, url, item });
     }
     return data;
   }
 
-  /* ============================================================
-     렌더링
-     ============================================================ */
-  let DATA = [];
-  let activeGroup = "all";
-  let query = "";
-
+  let DATA = []; let activeGroup = "all"; let query = "";
   function getGroupItems(group, allCats) {
     if (!group.items) return null;
     if (group.items === "__OTHER__") {
@@ -340,106 +258,46 @@
     }
     return group.items;
   }
-
-  function inGroup(group, item, allCats) {
-    const items = getGroupItems(group, allCats);
-    if (items === null) return true;
-    return items.includes(item);
-  }
-
-  function groupCount(group, allCats) {
-    const items = getGroupItems(group, allCats);
-    if (items === null) return DATA.length;
-    return DATA.filter(c => items.includes(c.item)).length;
-  }
+  function inGroup(group, item, allCats) { const items = getGroupItems(group, allCats); if (items === null) return true; return items.includes(item); }
+  function groupCount(group, allCats) { const items = getGroupItems(group, allCats); if (items === null) return DATA.length; return DATA.filter(c => items.includes(c.item)).length; }
+  function matchesQuery(c) { if (!query) return true; const q = query.toLowerCase(); return c.name.toLowerCase().includes(q) || c.url.toLowerCase().includes(q) || c.item.toLowerCase().includes(q); }
+  function ensureProtocol(url) { return /^https?:\/\//i.test(url) ? url : "http://" + url; }
+  function cleanUrl(url) { return url.replace(/^https?:\/\//, "").replace(/\/$/, ""); }
+  function escapeHtml(s) { return String(s).replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch])); }
+  function formatNow() { const d = new Date(); return `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,'0')}.${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`; }
 
   function render() {
     const allCats = new Set(DATA.map(d => d.item));
     const visibleGroups = GROUPS.filter(g => g.id === "all" || groupCount(g, allCats) > 0);
-
     const tabsEl = document.getElementById("tabs");
-    tabsEl.innerHTML = visibleGroups.map(g => `
-      <button class="tab ${g.id === activeGroup ? "active" : ""}" data-id="${g.id}">
-        ${g.label}<span class="count">${groupCount(g, allCats)}</span>
-      </button>
-    `).join("");
-    tabsEl.querySelectorAll(".tab").forEach(btn => {
-      btn.addEventListener("click", () => { activeGroup = btn.dataset.id; render(); });
-    });
-
+    tabsEl.innerHTML = visibleGroups.map(g => `<button class="tab ${g.id === activeGroup ? "active" : ""}" data-id="${g.id}">${g.label}<span class="count">${groupCount(g, allCats)}</span></button>`).join("");
+    tabsEl.querySelectorAll(".tab").forEach(btn => btn.addEventListener("click", () => { activeGroup = btn.dataset.id; render(); }));
     const sorted = [...DATA].sort((a, b) => a.name.localeCompare(b.name, "ko"));
-
     const sectionsEl = document.getElementById("sections");
-    const sectionsToShow = activeGroup === "all"
-      ? visibleGroups.filter(g => g.id !== "all")
-      : visibleGroups.filter(g => g.id === activeGroup);
-
+    const sectionsToShow = activeGroup === "all" ? visibleGroups.filter(g => g.id !== "all") : visibleGroups.filter(g => g.id === activeGroup);
     let totalShown = 0;
     sectionsEl.innerHTML = sectionsToShow.map(group => {
       const items = sorted.filter(c => inGroup(group, c.item, allCats) && matchesQuery(c));
       totalShown += items.length;
       if (items.length === 0) return "";
-      return `
-        <section class="section">
-          <div class="section-header">
-            <h2>${group.label}</h2>
-            <span class="section-count">${items.length}곳</span>
-            <span class="section-desc">${group.desc}</span>
-          </div>
-          <div class="grid">
-            ${items.map(c => `
-              <a class="card" href="${ensureProtocol(c.url)}" target="_blank" rel="noopener">
-                <div class="card-top">
-                  <div class="name">${escapeHtml(c.name)}</div>
-                  <span class="badge ${ITEM_CLASS[c.item] || "cat-default"}">${escapeHtml(c.item)}</span>
-                </div>
-                <div>
-                  <div class="url">${escapeHtml(cleanUrl(c.url))}</div>
-                  <div class="visit">사이트 방문</div>
-                </div>
-              </a>
-            `).join("")}
-          </div>
-        </section>
-      `;
+      return `<section class="section">
+        <div class="section-header"><h2>${group.label}</h2><span class="section-count">${items.length}곳</span><span class="section-desc">${group.desc}</span></div>
+        <div class="grid">${items.map(c => `<a class="card" href="${ensureProtocol(c.url)}" target="_blank" rel="noopener">
+          <div class="card-top"><div class="name">${escapeHtml(c.name)}</div><span class="badge ${ITEM_CLASS[c.item] || "cat-default"}">${escapeHtml(c.item)}</span></div>
+          <div class="url">${escapeHtml(cleanUrl(c.url))}</div>
+        </a>`).join("")}</div></section>`;
     }).join("");
-
     document.getElementById("empty").style.display = totalShown === 0 ? "block" : "none";
     document.getElementById("total-count").textContent = DATA.length;
     document.getElementById("cat-count").textContent = allCats.size;
   }
 
-  function matchesQuery(c) {
-    if (!query) return true;
-    const q = query.toLowerCase();
-    return c.name.toLowerCase().includes(q) || c.url.toLowerCase().includes(q) || c.item.toLowerCase().includes(q);
-  }
-
-  function ensureProtocol(url) { return /^https?:\/\//i.test(url) ? url : "http://" + url; }
-  function cleanUrl(url) { return url.replace(/^https?:\/\//, "").replace(/\/$/, ""); }
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
-  }
-
-  function formatNow() {
-    const d = new Date();
-    const yy = d.getFullYear();
-    const mm = String(d.getMonth() + 1).padStart(2, '0');
-    const dd = String(d.getDate()).padStart(2, '0');
-    const hh = String(d.getHours()).padStart(2, '0');
-    const mi = String(d.getMinutes()).padStart(2, '0');
-    return `${yy}.${mm}.${dd} ${hh}:${mi}`;
-  }
-
   document.getElementById("search").addEventListener("input", e => { query = e.target.value.trim(); render(); });
 
-  /* ============================================================
-     초기 로드
-     ============================================================ */
   (async () => {
     try {
       const data = await loadFromSheet();
-      if (!data.length) throw new Error('시트에 데이터가 없어요');
+      if (!data.length) throw new Error('데이터 없음');
       DATA = data;
       document.getElementById("loading").style.display = "none";
       document.getElementById("last-sync").textContent = formatNow();
@@ -454,6 +312,5 @@
     }
   })();
 </script>
-
 </body>
 </html>
